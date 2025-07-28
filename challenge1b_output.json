@@ -1,0 +1,77 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Breakfast Ideas.pdf",
+            "Dinner Ideas - Mains_1.pdf",
+            "Dinner Ideas - Mains_2.pdf",
+            "Dinner Ideas - Mains_3.pdf",
+            "Dinner Ideas - Sides_1.pdf",
+            "Dinner Ideas - Sides_2.pdf",
+            "Dinner Ideas - Sides_3.pdf",
+            "Dinner Ideas - Sides_4.pdf",
+            "Lunch Ideas.pdf"
+        ],
+        "persona": "Food Contractor",
+        "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+        "processing_timestamp": "2025-07-28T08:03:46.530994"
+    },
+    "extracted_sections": [
+        {
+            "document": "Dinner Ideas - Sides_2.pdf",
+            "section_title": "o Drain on paper towels and serve",
+            "importance_rank": 1,
+            "page_number": 8
+        },
+        {
+            "document": "Lunch Ideas.pdf",
+            "section_title": "Chicken Caesar Wrap",
+            "importance_rank": 2,
+            "page_number": 1
+        },
+        {
+            "document": "Dinner Ideas - Mains_3.pdf",
+            "section_title": "Quiche Lorraine",
+            "importance_rank": 3,
+            "page_number": 2
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "section_title": "o Add diced tomatoes fish stock wine saffron thyme salt and pepper simmer",
+            "importance_rank": 4,
+            "page_number": 8
+        },
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "section_title": "o Mix coconut milk with cooked rice and let sit for 10 minutes",
+            "importance_rank": 5,
+            "page_number": 10
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "Dinner Ideas - Sides_2.pdf",
+            "refined_text": "o Drain on paper towels and serve.\nFarofa\n•\nIngredients:\no 2 cups cassava flour\no 1/4 cup butter\no 1 small onion\no 2 cloves garlic\no 1/4 cup bacon\no 1/4 cup parsley\no 1 teaspoon salt\n•\nInstructions:\no Sauté diced bacon, onion, and minced garlic in butter until crispy.\no Add cassava flour and cook, stirring constantly, until golden.\no Stir in chopped parsley and salt.\no Serve warm.\nFattoush\n•\nIngredients:\no 2 pita breads\no 4 tomatoes\no 1 cucumber\no 1 small red onion\no 1/4 cup parsley\no 1/4 cup mint\no 1/4 cup lemon juice\no 1/4 cup olive oil\no 1 teaspoon sumac\no 1 teaspoon salt\n•\nInstructions:\no Toast pita breads until crispy, then break into pieces.\no Dice tomatoes and cucumber, slice red onion.\no Mix vegetables with chopped parsley and mint.\no Whisk lemon juice, olive oil, sumac, and salt, then pour over salad.\no Toss well and serve.\nFava\n•\nIngredients:\no 1 cup yellow split peas\no 1 small onion\no 2 cloves garlic\no 1/4 cup olive oil\no 1/4 cup lemon juice\no 1 teaspoon salt",
+            "page_number": 8
+        },
+        {
+            "document": "Lunch Ideas.pdf",
+            "refined_text": "Chicken Caesar Wrap\nIngredients:\n•\n1 whole wheat tortilla\n•\n1 cup cooked chicken breast, sliced\n•\n1 cup romaine lettuce, chopped\n•\n2 tablespoons Caesar dressing\n•\n2 tablespoons grated Parmesan cheese\n•\nOptional: croutons for extra crunch\nInstructions:\n•\nLay the tortilla flat and spread the Caesar dressing evenly.\n•\nAdd the chicken, lettuce, and Parmesan cheese.\n•\nRoll up the tortilla tightly and slice in half.\nQuinoa Salad\nIngredients:\n•\n1 cup cooked quinoa\n•\n1/2 cup cherry tomatoes, halved\n•\n1/2 cucumber, diced\n•\n1/4 cup red onion, finely chopped\n•\n1/4 cup feta cheese, crumbled\n•\n2 tablespoons olive oil\n•\n1 tablespoon lemon juice\n•\nSalt and pepper to taste\nInstructions:\n•\nIn a large bowl, combine the quinoa, tomatoes, cucumber, red onion, and feta cheese.\n•\nDrizzle with olive oil and lemon juice.\n•\nSeason with salt and pepper, then toss to combine.\nTurkey and Avocado Sandwich\nIngredients:\n•\n2 slices whole grain bread\n•\n4 slices turkey breast\n•\n1/2 avocado, sliced\n•\n1/2 cup spinach leaves\n•\n1 tablespoon mustard or mayo\nInstructions:\n•\nSpread mustard or mayo on one slice of bread.\n•\nLayer the turkey, avocado, and spinach on top.\n•\nTop with the second slice of bread and cut in half.",
+            "page_number": 1
+        },
+        {
+            "document": "Dinner Ideas - Mains_3.pdf",
+            "refined_text": "Quiche Lorraine\nIngredients:\n•\n1 pie crust\n•\n6 slices bacon, cooked and crumbled\n•\n1 small onion, diced\n•\n1 cup grated Gruyère cheese\n•\n3 eggs\n•\n1 cup heavy cream\n•\n1/2 teaspoon salt\n•\n1/4 teaspoon pepper\nInstructions:\n•\nPreheat oven to 375°F (190°C).\n•\nPlace pie crust in a pie dish.\n•\nSprinkle cooked bacon, diced onion, and grated Gruyère cheese over the crust.\n•\nIn a bowl, whisk eggs, heavy cream, salt, and pepper.\n•\nPour egg mixture over the filling.\n•\nBake for 30-35 minutes until set and golden.\n•\nServe warm.\nRamen\nIngredients:\n•\n4 cups chicken broth\n•\n1/4 cup soy sauce\n•\n2 tablespoons miso paste\n•\n2 cloves garlic, minced\n•\n1 piece ginger, sliced\n•\n1/2 pound pork belly, sliced\n•\n4 eggs, soft-boiled\n•\n8 ounces ramen noodles\n•\nSliced green onions, nori, and sesame seeds for garnish\nInstructions:\n•\nIn a large pot, bring chicken broth, soy sauce, miso paste, minced garlic, and sliced\nginger to a boil.\n•\nReduce heat and simmer for 20 minutes.\n•\nIn a skillet, cook sliced pork belly until crispy.\n•\nCook ramen noodles according to package instructions.\n•\nDivide noodles among bowls, top with broth, pork belly, soft-boiled eggs, sliced green\nonions, nori, and sesame seeds.\n•\nServe immediately.",
+            "page_number": 2
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "refined_text": "o Add diced tomatoes, fish stock, wine, saffron, thyme, salt, and pepper, simmer\nfor 20 minutes.\no Add fish fillets, shrimp, and mussels, cook until seafood is done.\no Serve hot with crusty bread.\nBratkartoffeln (Fried Potatoes)\n•\nIngredients:\no 4 potatoes\no 1 small onion\no 1/4 cup bacon\no 2 tablespoons butter\no 1 teaspoon salt\no 1/2 teaspoon pepper\n•\nInstructions:\no Boil potatoes until tender, then slice.\no Cook diced bacon until crispy, then remove and set aside.\no Sauté sliced potatoes and diced onion in butter until golden.\no Stir in bacon, salt, and pepper.\no Serve warm.\nBriam\n•\nIngredients:\no 2 potatoes\no 2 zucchinis\no 2 eggplants\no 2 tomatoes\no 1 small onion\no 4 cloves garlic\no 1/4 cup olive oil\no 1 teaspoon oregano\no 1 teaspoon salt\no 1/2 teaspoon pepper\n•\nInstructions:\no Preheat oven to 375°F (190°C).\no Slice potatoes, zucchinis, eggplants, and tomatoes.\no Sauté diced onion and minced garlic in olive oil until softened.\no Layer vegetables in a baking dish, seasoning with oregano, salt, and pepper.\no Pour sautéed onion and garlic over the top.\no Bake for 45 minutes until vegetables are tender.\no Serve warm.\nBriouats\n•\nIngredients:\no 1/2 pound ground beef",
+            "page_number": 8
+        },
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "refined_text": "o Mix coconut milk with cooked rice and let sit for 10 minutes.\no Serve rice with sliced mangoes.\nMapo Tofu\n•\nIngredients:\no 1 block tofu\no 1/2 pound ground pork\no 1 small onion\no 2 cloves garlic\no 1 tablespoon chili bean paste\no 2 tablespoons soy sauce\no 1 tablespoon rice wine\no 1 teaspoon sugar\no 1/4 cup chicken broth\no 1 tablespoon cornstarch\no 1/4 cup chopped green onions\n•\nInstructions:\no Cut tofu into cubes and set aside.\no Sauté ground pork, diced onion, and minced garlic until browned.\no Add chili bean paste, soy sauce, rice wine, and sugar, cook for 2 minutes.\no Add chicken broth and tofu, simmer for 5 minutes.\no Mix cornstarch with water and add to the pan, stirring until thickened.\no Garnish with chopped green onions and serve.\nMashed Potatoes\n•\nIngredients:\no 4 potatoes\no 1/2 cup milk\no 1/4 cup butter\no 1 teaspoon salt\no 1/2 teaspoon pepper\n•\nInstructions:\no Peel and dice potatoes.\no Boil potatoes until tender, then drain.\no Mash potatoes with milk, butter, salt, and pepper.\no Serve warm.\nMinestrone\n•\nIngredients:\no 1 onion\no 2 carrots\no 2 celery stalks\no 2 cloves garlic\no 1 zucchini",
+            "page_number": 10
+        }
+    ]
+}
