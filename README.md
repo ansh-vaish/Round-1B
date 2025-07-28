@@ -1,70 +1,101 @@
-# 📄 Relevant Section Extractor
+# Adobe India Hackathon - Round 1B
 
-This repository contains a script that extracts the **most relevant sections** from a collection of documents (PDFs) based on a defined **persona** and **task**. It uses **semantic similarity** to identify which sections of each document are most aligned with the task at hand.
-
----
-
-## 🚀 Overview
-
-The script works by:
-1. Parsing and processing documents using helper functions.
-2. Computing semantic similarity scores between each section of the document and a query constructed from the persona and task.
-3. Ranking the sections by relevance.
-4. Selecting the **top-k** most relevant sections, ensuring **only one section per document** is chosen to increase diversity.
-5. Saving a structured JSON output with metadata, section rankings, and full text of the top sections.
+This project is part of **Round 1B** of the Adobe India Hackathon. It performs **Persona-Driven Document Intelligence** using sentence transformers to extract meaningful section titles from PDFs and generate structured output.
 
 ---
 
-## 🧠 Approach
-
-### 🔹 Step 1: Preprocessing
-- Input consists of a JSON config and a directory of PDFs.
-- The function `process_input_documents()` (from `processor.py`) parses PDFs and extracts page-wise text.
-
-### 🔹 Step 2: Embedding and Similarity
-- We use the [SentenceTransformers](https://www.sbert.net/) model `all-MiniLM-L6-v2` to convert text into embeddings.
-- The similarity score is computed using **cosine similarity** between:
-  - The embedding of the query: `"persona: task"`
-  - The embedding of each section of text from the PDFs.
-
-### 🔹 Step 3: Scoring and Ranking
-- Each section is scored based on its relevance to the query.
-- Titles are cleaned using `clean_section_title()` from `utils.py`.
-- The highest-scoring section from each document is considered until the `top_k` threshold is met.
-
-### 🔹 Step 4: Output Generation
-- The output JSON includes:
-  - Metadata (input docs, persona, task, timestamp)
-  - A ranked list of relevant sections
-  - The refined full text for each selected section
+## 🧩 Project Structure
+├── challenge1b_input.json # Input configuration with file names and personas
+├── challenge1b_output.json # Output file with extracted section titles
+├── pdf/ # Folder containing all source PDFs
+│ ├── *.pdf
+├── extract.py # Main runner script
+├── processor.py # Logic for processing pages and sections
+├── utils.py # Helper functions (embedding, scoring, etc.)
+├── requirements.txt # Python dependencies
+└── dockerfile # Docker container setup
 
 ---
 
-## 📂 File Structure
-
-.
-├── extractor.py # Main script
-├── processor.py # PDF + input processor (not shown here)
-├── utils.py # Title cleaner utility (not shown here)
-├── challenge1b_input.json # Input JSON (config)
-├── pdf/ # Folder containing PDF files
-└── challenge1b_output.json # Output with selected sections
-
-yaml
-Copy
-Edit
 
 ---
 
-## 📥 Input Format
+## 🚀 Features
 
-`challenge1b_input.json` should include:
-```json
-{
-  "persona": "HR Manager",
-  "job_to_be_done": "Find the best fit for a leadership role",
-  "documents": [
-    {"filename": "resume1.pdf"},
-    {"filename": "resume2.pdf"}
-  ]
-}
+- ✅ Clean PDF text extraction using PyMuPDF
+- ✅ Sentence embedding using `sentence-transformers`
+- ✅ Section title selection based on cosine similarity
+- ✅ Persona relevance filtering
+- ✅ Fully offline-capable processing
+- ✅ Dockerized for reproducibility and portability
+
+---
+
+## 🔧 Local Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ansh-vaish/Adobe-Hackathon.git
+cd "Adobe-Hackathon/Round - 1B"
+
+2. Install Python dependencies
+Make sure you have Python 3.9+ installed.
+pip install -r requirements.txt
+
+3. Run the extractor
+python extract.py
+🔁 It reads from challenge1b_input.json and writes to challenge1b_output.json.
+
+🐳 Run via Docker (Recommended)
+
+1. Build the Docker image
+docker build -t round1b-extractor .
+
+2. Run the extraction in a container
+docker run --rm -v "${PWD}:/app" round1b-extractor python extract.py
+✅ Output will be saved in your local folder as challenge1b_output.json.
+
+📥 Input Format (challenge1b_input.json)
+[
+  {
+    "file_name": "sample1.pdf",
+    "persona": "student"
+  },
+  {
+    "file_name": "sample2.pdf",
+    "persona": "working professional"
+  }
+]
+
+📤 Output Format (challenge1b_output.json)
+[
+  {
+    "file_name": "sample1.pdf",
+    "extracted_sections": [
+      "Introduction",
+      "Key Learnings",
+      "Conclusion"
+    ]
+  },
+  {
+    "file_name": "sample2.pdf",
+    "extracted_sections": [
+      "Executive Summary",
+      "Career Opportunities"
+    ]
+  }
+]
+
+🔍 Persona-Aware Intelligence
+The model extracts candidate sections and scores them for semantic similarity to persona-specific queries like:
+
+For student: "overview for students", "learning section", "academic relevance"
+
+For professional: "summary for professionals", "business insights", "career impact"
+
+These reference queries are embedded and matched using cosine similarity with section candidates.
+
+⚖️ License
+This code is developed as part of the Adobe India Hackathon 2025 and is intended for submission/review only. Please do not reuse or distribute without permission.
+
